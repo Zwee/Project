@@ -1,0 +1,140 @@
+ /* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes. Review Lesson 1.3
+if you need a refresher about how to do this.
+
+title border
+border: solid 3px;
+border-radius: 25%;
+border-color: #EDDA74; /* 'wild rice yellow' */
+
+
+.style {
+  	display: flex;
+    display: -webkit-flex;
+  }
+
+  * {  /* Research later: why we get this CSSLint Warning:
+          The universal selector (*) is known to be slow.at line 13 col 3 in Portfolio\Assignment - Stage1\project\style.css */
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      /* Research later: why we get this CSSLint Warning:
+      The box-sizing property isn't supported in IE6 and IE7.at line 18 col 7 in Portfolio\Assignment - Stage1\project\style.css */
+  }
+
+  body {
+    width: 100%;
+  	height: 100%;
+    background-color: white;
+  }
+
+  .title {
+    background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+    color: #0065CC;
+    font-family: Arial;
+    text-align: center;
+    border: outset;
+    border-radius: 20px;
+    padding: 10px 10px;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #0065CC;
+    font-family: Arial;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+
+  .mainpage {
+	  color: #007FFF;
+	  padding: 20px;
+    font-family: serif;
+    max-width: 85%;
+    margin-left: 10%;
+    margin-right:10%;
+    display: flex;
+  }
+
+  .about {
+    font-family: Arial;
+    color: #007FFF;
+    padding: 10px 60px;
+    float: left;
+  }
+
+ .navigation {
+   margin: 5px;
+   padding: 1px 7px 5px 7px;
+   font-weight: bolder;
+   content: center;
+   border-radius: 20px;
+   background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+   font-family: Arial;
+   color: #0065CC;
+   border: 5px outset #FF9933;
+ }
+
+  .footer {
+    margin-left: 30%;
+    margin-right: 25%;
+    border-color: #FF9933;
+    border-style: ridge;
+    border-width: 6px;
+    border-radius: 20px;
+    background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+    width: 35%;
+    bottom: 0;
+
+  }
+
+  td {
+    text-align: center;
+    padding: 10px;
+  }
+/* border="1" cellpadding="2" cellspacing="4" style="height: 15px;" */
+
+  a:link {
+  color: #0065CC;
+  }
+  a:visited {
+  color: #AA66CC;
+  }
+  a:hover {
+  color: #FF9933;
+  }
+
+  .glossary {
+    font-family: Arial;
+    color: #007FFF;
+    padding: 10px 50px;
+    float: right;
+  }
+
+  .bling {
+    text-shadow: 4px 4px 2px #FF9933;
+    text-decoration: underline;
+  }
+
+  .content {
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial;
+    text-align: center;
+    border-radius: 20%;
+    border: 5px outset #CBC1CC;
+    max-width: 705px;
+    background: repeating-linear-gradient(45deg, #CBC1CC, #FFFFFF, #CBC1CC);
+  }
+
+  .image {
+      max-width:460px;
+  		padding-top: 3%;
+  }
