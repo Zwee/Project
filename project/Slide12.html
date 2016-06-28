@@ -1,0 +1,128 @@
+<!--<html>
+<body bgcolor="#BCC6CC">
+<style>
+  * {
+    margin: 8px;
+    border : red solid 2px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  </style>
+<p>This is Slide 12 Size (and Image) Matters: Sizing Elements, Flexbox, and Adding Elements Part 2
+</p>
+
+Sizing Elements, Flexbox, Adding Images Pg 2
+
+NOTE – Learning how to be flexible (for display purposes only.  ):
+On the previous page, we saw the rule 'display: flex' added to 'element.style', which adds the CSS directly to the 'div' element on the left-hand side of the development tools.
+In this, and future mentions, this CSS rule is in the main .css file, 'style.css:'
+	(<  .app {
+	display: flex;
+} (remove brackets) )
+The rule works as-is with Chrome 29+, IE 11+, and Mozilla 28+. To support Safari, the '-webkit-' prefix MUST be added: (Note the class selector, as mentioned earlier.)
+    	  ().app {
+      	display: -webkit-flex;
+      	display: flex;
+    	})
+Box Sizing:
+4 main points:  1) HTML elements are boxes and each box has 4 components
+    	2) Because there are so many components to a box, it can often be hard to get the size of a box just right.
+    	3) Two techniques you can use to deal with sizing issues:
+    		a) Set sizes in terms of percentages vs. pixels
+   	 	b) Set box-sizing attribute to border-box for every element (mentioned above)
+    	4) Different browsers differ slightly, one to the other, so this can cause some to display the same code differently.
+ 
+Box Positioning:
+    1) divs are BLOCK elements (as opposed to inline) so, by default, they take up the entire width of a page.
+    2) Adding the rule 'display: flex;' to the appropriate CSS will over-ride this behaviour and let divs appear next to each other.
+ 
+Adding images:
+    -You have to store the image somewhere that the page can access it.
+    - You can add the image to the page with the 'img' tag and providing the source ('src') of the image.
+    -You should always make sure to add your 'alt' attribute, to display alternate info in case your image doesn't display.
+
+
+</body>
+</html>
+-->
+
+Template:
+
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      5. Images & Whitespace
+    </title>
+  </head>
+-->
+  <body>
+    <center>
+      <div class="title">
+        Images and Whitespace
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="subtitle">
+        |- Elements, Markup, and Tags -|
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><b>HTML</b> is made up of <u><em>Elements</em></u>.
+        </p>
+        <u><b>Elements(*)
+        </b> contain:</u>
+        <ul style="list-style-type:none">
+          <li>Text Content (What you're looking at)</li>
+          <li>Markup(*) (What it looks like)</li>
+          <li>Refs to other docs (e.g. images, videos)</b></li>
+          <li>Links to other pages (Other things to look at)</li>
+          <li><em>HTML Markup.</em></u></li>
+        </ul>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><u><b>HTML Markup(*)</b> consists of:</u>
+        </p
+        <ul style="list-style-type:none">
+          <li>opening tag &lt;tag name&gt; </li>
+          <li>the tag contents</li>
+          <li>closing tag &lt;&#47;tag name&gt;</li>
+        </ul>
+        <br>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump">
+          <u><b>HTML elements</b> are either <em>1) inline</em> or <em>2) block.</em></u>
+        </p>
+          <b>Block</b>, as the name might suggest, makes an 'invisible box' around whatever is inside the element.
+          <br>This box has dimensions which can be exploited. (There will be more on this later.)
+          <br>An <b>inline</b> element occupies only the space reserved by the tags that define the inline element
+          <br>
+          <br>
+        <p>
+          <a href="http://www.webdesignerdepot.com/2012/09/when-pages-are-not-paper-the-designers-guide-to-layout-code/">Here's a site</a> with a handy diagram that clearly and simply shows the difference between 'Block' and 'Inline'
+        </p>
+          <br>
+      </div>
+    </center>
+    <br>
+    <br>
+    <center>
+      <div class="subtitle">
+        <a href="Index.html#">|- Back to Table of Contents -|</a>
+      </div>
+    </center>
+  </body>
+  </html>

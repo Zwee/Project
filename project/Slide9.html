@@ -1,0 +1,115 @@
+<!--<html>
+<body bgcolor="#BCC6CC">
+<style>
+  * {
+    margin: 8px;
+    border : red solid 2px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  </style>
+  <p>
+    This is Slide 9 Adding CSS Styling to Your Site
+  </p>
+
+  3 Ways to Include CSS Styling to Your Site:
+
+  1) write CSS in the &#60;head&#62; of your HTML -Good for small projects, like from scratchpad. To do this: a) at top of HTML cos, add "head"  b) Inside &#60;head&#62;, add a &#60;style&#62; element.   c) Write your CSS in the &#60;style&#62; element, then put HTML for the rest of your page below.
+
+  2) a) Write all structure HTML in 1 file (e.g.: main.html)    b) In separate file (main.css) put in all your CSS code.   c) Add &#60;head&#62; at top of your HTML   d) Add &#60;link&#62; inside &#60;head&#62; (&#60;link&#62; is a void tag)    e) Add these attributes to your &#60;link&#62;:   rel="stylesheet"   href="main.css"
+
+  3)Write your style inline with your HTML.
+  This is usually a bad idea as it leads to a LOT of repetition and makes for very unsightly code. However, you may still see code that uses this method, so it's good to be familiar with it. With this method you modify the style attributes of every individual HTML element.
+
+  NOTE:
+  There are a lot of little mistakes you can and will make at some point that will cause any of these methods not to work. E.g.: writing code using 2) with main.html and main.css in differenet folders on your computer. (Hint: this doesn't work at all.)
+
+  You will have a higher HTML : CSS code ratio. HTML is the body, CSS is just the presentation. It only takes a little code to make big visual impacts.
+
+  When 'calling' (typing into code) an element (like body) does not get a . in front of it.
+  Class names get a . in front when calling.
+
+
+</body>
+</html>
+-->
+
+Template:
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      5. Images & Whitespace
+    </title>
+  </head>
+-->
+  <body>
+    <center>
+      <div class="title">
+        Images and Whitespace
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="subtitle">
+        |- Elements, Markup, and Tags -|
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><b>HTML</b> is made up of <u><em>Elements</em></u>.
+        </p>
+        <u><b>Elements(*)
+        </b> contain:</u>
+        <ul style="list-style-type:none">
+          <li>Text Content (What you're looking at)</li>
+          <li>Markup(*) (What it looks like)</li>
+          <li>Refs to other docs (e.g. images, videos)</b></li>
+          <li>Links to other pages (Other things to look at)</li>
+          <li><em>HTML Markup.</em></u></li>
+        </ul>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><u><b>HTML Markup(*)</b> consists of:</u>
+        </p
+        <ul style="list-style-type:none">
+          <li>opening tag &lt;tag name&gt; </li>
+          <li>the tag contents</li>
+          <li>closing tag &lt;&#47;tag name&gt;</li>
+        </ul>
+        <br>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump">
+          <u><b>HTML elements</b> are either <em>1) inline</em> or <em>2) block.</em></u>
+        </p>
+          <b>Block</b>, as the name might suggest, makes an 'invisible box' around whatever is inside the element.
+          <br>This box has dimensions which can be exploited. (There will be more on this later.)
+          <br>An <b>inline</b> element occupies only the space reserved by the tags that define the inline element
+          <br>
+          <br>
+        <p>
+          <a href="http://www.webdesignerdepot.com/2012/09/when-pages-are-not-paper-the-designers-guide-to-layout-code/">Here's a site</a> with a handy diagram that clearly and simply shows the difference between 'Block' and 'Inline'
+        </p>
+          <br>
+      </div>
+    </center>
+    <br>
+    <br>
+    <center>
+      <div class="subtitle">
+        <a href="Index.html#">|- Back to Table of Contents -|</a>
+      </div>
+    </center>
+  </body>
+  </html>

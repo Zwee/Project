@@ -1,0 +1,143 @@
+<!--<html>
+<body bgcolor="#BCC6CC">
+<style>
+  * {
+    margin: 8px;
+    border : red solid 2px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  </style>
+  <p>
+    This is Slide 10 Elements: Understanding div, span, id, and class
+  </p>
+
+
+  Understanding div, span, id, and class
+    You can have a span in a div, but not the other way around.
+
+    div is a block. Ihink 'div-ides into boxes'. You can also think of div-ider tabs in a file cabinet or binder...they have labels, names, contents.
+
+    Spans are used for text decorations, only changes things inline. Spans do not affect their layout.
+
+    **Span controls anything else inline that you want to change, without affecting the layout of the page.
+
+  Using Semantic Tags
+    More on semantic elements:
+    -Changing the visual properties of an element only changes how the element is displayed; it does not change the element itself or what kind of element it is.
+    -Be sure to choose the correct type of element for cetain parts of a page, depending on what the purpose of that element is. (Using MyApp demo file as e.g.) The title at the top of the page is just the text giving the user an understanding of what's on the page, so you should be using a tag that provides such information.
+    -Think of the elements to choose from when making a MS Word doc. (headers, footers, titles, headings, etc.) They all have specific attributes that are going to be consistent every time you use them. In HTML they're simply referred to as h1, h2, etc.
+    -Search engines also use headings to index the structure and content of a web page.
+
+    (ref. My App demo, line 8)
+    While div is totally fine to use here, the more appropriate tag to use, based on desired effect, is h1.
+
+    div gave us a box but h1 gave us a box with bold and larger font, with less code. (clean is good!)
+
+    If you'd like to know how much space a given element will take on any chosen screen size, use the following CSS style that calculates/changes the sizing of elements so you can see:
+  <!-- * {  box-sizing: border-box;} -->
+  This makes the calculation of the element size include both the border AND padding so that it's easier to make layouts. You set the midth of the overall box, and the box will stay the same, regardless of padding or border tweaks you make later.
+
+  Remember, though, that -when using this boz-sizing trick-the margin is NOT included in the size.
+
+  AND there's a catch:
+  This model is a fairly recent development, so some extra work is needed to be sure that older browsers can display your work.
+  You will need to add what's called 'browser specific prefixes'
+  They are:
+  -webkit (for Chrome and Safari)
+  -moz (for Firefox)
+  -ms (for IE)
+  (they all include the - in front of them.)
+  You just add them IN FRONT of the style definition. It looks like this:
+
+  <!-- * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }  -->
+
+
+</body>
+</html>
+-->
+
+Template:
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      5. Images & Whitespace
+    </title>
+  </head>
+-->
+  <body>
+    <center>
+      <div class="title">
+        Images and Whitespace
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="subtitle">
+        |- Elements, Markup, and Tags -|
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><b>HTML</b> is made up of <u><em>Elements</em></u>.
+        </p>
+        <u><b>Elements(*)
+        </b> contain:</u>
+        <ul style="list-style-type:none">
+          <li>Text Content (What you're looking at)</li>
+          <li>Markup(*) (What it looks like)</li>
+          <li>Refs to other docs (e.g. images, videos)</b></li>
+          <li>Links to other pages (Other things to look at)</li>
+          <li><em>HTML Markup.</em></u></li>
+        </ul>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><u><b>HTML Markup(*)</b> consists of:</u>
+        </p
+        <ul style="list-style-type:none">
+          <li>opening tag &lt;tag name&gt; </li>
+          <li>the tag contents</li>
+          <li>closing tag &lt;&#47;tag name&gt;</li>
+        </ul>
+        <br>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump">
+          <u><b>HTML elements</b> are either <em>1) inline</em> or <em>2) block.</em></u>
+        </p>
+          <b>Block</b>, as the name might suggest, makes an 'invisible box' around whatever is inside the element.
+          <br>This box has dimensions which can be exploited. (There will be more on this later.)
+          <br>An <b>inline</b> element occupies only the space reserved by the tags that define the inline element
+          <br>
+          <br>
+        <p>
+          <a href="http://www.webdesignerdepot.com/2012/09/when-pages-are-not-paper-the-designers-guide-to-layout-code/">Here's a site</a> with a handy diagram that clearly and simply shows the difference between 'Block' and 'Inline'
+        </p>
+          <br>
+      </div>
+    </center>
+    <br>
+    <br>
+    <center>
+      <div class="subtitle">
+        <a href="Index.html#">|- Back to Table of Contents -|</a>
+      </div>
+    </center>
+  </body>
+  </html>

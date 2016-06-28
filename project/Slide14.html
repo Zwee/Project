@@ -1,0 +1,146 @@
+<!-- <html>
+<body bgcolor="#BCC6CC">
+
+  <p>This is Slide 14 Summary and Misc. Info From Live Coding Session
+  </p>
+
+
+  SUMMARY:
+
+  practise and don't be afraid.
+
+  Aditional info from Live Coding Session:
+  Hint for figuring out layout of content and structural choices before coding:
+  map out your content on paper, or use Word/Google Docs/etc...
+  -the indenting and punctuation/headers/etc will start to give you ideas about where your content will look best. It's an organic, very visual approach and can make a river of content seem less daunting to place neatly on your page.
+  -It'll help you decide what's going tobe nested, and why.
+
+  -Add style (like previously with the mock-up) to let you see the boxes while you tweak your code. It makes the various elements easier to see, and you just take this little bit of style out and the visual aid goes away. It also adds shading that we didn't use previously, but is a huge help to see overlap in boxes:
+
+  (<style>
+  * {
+  margin: 8px;
+  border : red solid 2px;
+  background-color: rgba(0,0,0,0,15);
+})
+  the 15 after the zeros is the transparency value.
+
+  &lt;p&gt; bascially just tells the browser that you intend this to be a bunch of text (hence Paragraph)
+  -It's OK to have 'special text' (like a href url...) to add links and images. It's still a paragraph.
+  (<style>
+    * {
+      margin: 8px;
+      border : red solid 2px;
+      background-color: rgba(0,0,0,0.15);
+    }
+  </style>)
+  Trick:
+  If some indentation is wonky, do this to make them all even:
+  highlight the off kilter lines, then hit TAB. They'll pop inline inwards.
+  If you use shift + TAB they'll pop outwards.
+
+  &lt;div&gt; basically just makes sure stuff inside has a box. It doesn't really have any special inate values
+
+  Q: Why is my picture not being styled correctly when I put it in a div and then style the div?
+  A: &lt;img&gt; is an element in itself, Add its style to it, not the div before it. Make sure you're putting the style where it needs to be and make sure you grok where it's supposed to go.
+
+  How to center an image in CSS:
+  '.image-container {
+    text-align: center;
+  }'
+  Found using google search for 'how to center image in css.
+  Remember: every element has to have its own box.
+
+  Final reminder:
+  When going through your code, look at your CSS and ask "what do these things have in common, and how can I style just that?" and "How can I remove code that repeats itself?"
+  When checking and troubleshooting, remember to start by checking for unclosed tags. It's a simple, common mistake.
+
+  Don't Forget:
+  If you're playing around with code and don't want to accidentally cut out something you might want to put back in later, just comment it out, then either delete it or uncomment it later once you've decided what you like.
+
+
+
+</body>
+</html>
+-->
+
+Template:
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      5. Images & Whitespace
+    </title>
+  </head>
+-->
+  <body>
+    <center>
+      <div class="title">
+        Images and Whitespace
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="subtitle">
+        |- Elements, Markup, and Tags -|
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><b>HTML</b> is made up of <u><em>Elements</em></u>.
+        </p>
+        <u><b>Elements(*)
+        </b> contain:</u>
+        <ul style="list-style-type:none">
+          <li>Text Content (What you're looking at)</li>
+          <li>Markup(*) (What it looks like)</li>
+          <li>Refs to other docs (e.g. images, videos)</b></li>
+          <li>Links to other pages (Other things to look at)</li>
+          <li><em>HTML Markup.</em></u></li>
+        </ul>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><u><b>HTML Markup(*)</b> consists of:</u>
+        </p
+        <ul style="list-style-type:none">
+          <li>opening tag &lt;tag name&gt; </li>
+          <li>the tag contents</li>
+          <li>closing tag &lt;&#47;tag name&gt;</li>
+        </ul>
+        <br>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump">
+          <u><b>HTML elements</b> are either <em>1) inline</em> or <em>2) block.</em></u>
+        </p>
+          <b>Block</b>, as the name might suggest, makes an 'invisible box' around whatever is inside the element.
+          <br>This box has dimensions which can be exploited. (There will be more on this later.)
+          <br>An <b>inline</b> element occupies only the space reserved by the tags that define the inline element
+          <br>
+          <br>
+        <p>
+          <a href="http://www.webdesignerdepot.com/2012/09/when-pages-are-not-paper-the-designers-guide-to-layout-code/">Here's a site</a> with a handy diagram that clearly and simply shows the difference between 'Block' and 'Inline'
+        </p>
+          <br>
+      </div>
+    </center>
+    <br>
+    <br>
+    <center>
+      <div class="subtitle">
+        <a href="Index.html#">|- Back to Table of Contents -|</a>
+      </div>
+    </center>
+  </body>
+  </html>

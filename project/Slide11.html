@@ -1,0 +1,118 @@
+<!--<html>
+<body bgcolor="#BCC6CC">
+<style>
+  * {
+    margin: 8px;
+    border : red solid 2px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  </style>
+
+  <p>
+    This is Slide 11 Size (and Image) Matters: Sizing Elements, Flexbox, and Adding Elements Part 1
+  </p>
+
+  Sizing Elements, Flexbox, Adding Images Pg 1
+
+ So far in the lesson it’s been shown in pixels, but there are a few ways to define size:
+  -percentage (responds/relies on screen size) Size WILL change depending on the size of the screen or how encompassing the boxes are.
+-pixels (Stays the same, regardless of screen size) The element WILL NOT change no matter how big or small the display screen is. This can sometimes lead to a bad user experience.
+You can also set a max width. In that case, the element WILL resize and become smaller when necessary, but NOT > than  set max width.
+** (need pic from My App) Positioning:
+-Good news: There is a lot of power in CSS to position elements Bad news: This is one of the most complicated concepts about CSS
+  One powerful technique is called Flex Box Layout.
+  'Flexbox' means 'flexible box' and it provides an efficient way to lay out, align, and distribute space among items in a container ('div')
+  -In our mock-up, we have our image next to our description.
+  -If you'd like several elements to be next to each other, you can change the 'display' attribute of the Parent Container to value 'flex'.
+  -In our My App exercise, we have our parent div class 'app'.
+-In &#60;div class="app"&#62; (clicked to highlight in Dev. Tools.) we can click to R side of dev tools screen, under 'styles' tab, next to 'element.style {...' we'll add the rule 'display: flex' to the element style, and we should get the child elements trying to align next to each other. For it to work, you also have to give the items a size that is SMALLER than 100% (default)
+ 	E.g.:  <!--  element.style{
+		display: flex;
+		}  --> (remove commenting tags)
+
+
+
+</body>
+</html>
+-->
+
+Template:
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      5. Images & Whitespace
+    </title>
+  </head>
+-->
+  <body>
+    <center>
+      <div class="title">
+        Images and Whitespace
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="subtitle">
+        |- Elements, Markup, and Tags -|
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><b>HTML</b> is made up of <u><em>Elements</em></u>.
+        </p>
+        <u><b>Elements(*)
+        </b> contain:</u>
+        <ul style="list-style-type:none">
+          <li>Text Content (What you're looking at)</li>
+          <li>Markup(*) (What it looks like)</li>
+          <li>Refs to other docs (e.g. images, videos)</b></li>
+          <li>Links to other pages (Other things to look at)</li>
+          <li><em>HTML Markup.</em></u></li>
+        </ul>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><u><b>HTML Markup(*)</b> consists of:</u>
+        </p
+        <ul style="list-style-type:none">
+          <li>opening tag &lt;tag name&gt; </li>
+          <li>the tag contents</li>
+          <li>closing tag &lt;&#47;tag name&gt;</li>
+        </ul>
+        <br>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump">
+          <u><b>HTML elements</b> are either <em>1) inline</em> or <em>2) block.</em></u>
+        </p>
+          <b>Block</b>, as the name might suggest, makes an 'invisible box' around whatever is inside the element.
+          <br>This box has dimensions which can be exploited. (There will be more on this later.)
+          <br>An <b>inline</b> element occupies only the space reserved by the tags that define the inline element
+          <br>
+          <br>
+        <p>
+          <a href="http://www.webdesignerdepot.com/2012/09/when-pages-are-not-paper-the-designers-guide-to-layout-code/">Here's a site</a> with a handy diagram that clearly and simply shows the difference between 'Block' and 'Inline'
+        </p>
+          <br>
+      </div>
+    </center>
+    <br>
+    <br>
+    <center>
+      <div class="subtitle">
+        <a href="Index.html#">|- Back to Table of Contents -|</a>
+      </div>
+    </center>
+  </body>
+  </html>

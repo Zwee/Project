@@ -1,0 +1,134 @@
+<!--<html>
+<body bgcolor="#BCC6CC">
+<style>
+  * {
+    margin: 8px;
+    border : red solid 2px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  </style>
+  <p>This is Slide 13 Code, Test, Refine
+  </p>
+
+
+  Code, Test, Refine
+  1) Write code
+  2) Test to see how it looks when compared against the mock-up
+  3) Refine/modify the code so that it looks closer and closer to the design you were given
+  4) Repeat 1-3 as necessary until it looks like the desired page
+
+  Question:
+  How do you know where to start testing?
+  A: Look for 'natural boxes' to determine structure
+
+  Question:
+  How do you know what to refine so it starts to look more and more like the design?
+  A: Look for repeated styles and semantic elements. (Like h2 should be for the second biggest headings on the page, etc...)
+  Think about how yoiu can relate this to HTML elements, then
+  1) Write your html
+  2) Apply styles (from BIGGEST to smallest) (Site-wide elements to widgets)
+  3) Fix things: Fix little things left over you can see right away, then check your site with multiple browsers, resize the window, etc...
+  Repeat 1-3 until desired results achieved.
+
+  MORE ON DEV TOOLS
+  -remember that developer tools can be a biog help during the code/test/refine cycle.
+  -You can test things on the fly and quickly see how changes will affect your page without having to commit to anything. (e.g.: font size or family in h1, colour of background, etc)
+  -You can also check code in the Sources Tab.
+  -You can reset any changes just by clicking 'refresh'
+
+  COMPARING WITH THE DESIGN
+  -You can use Dev Tools to find the proper value of the margin for the image class.
+  -=Once you have refined it in Dev Tools, you can then save it to your CSS file.
+  -If colours are not provided with the design mock-up/specs (usually provided in hex), you can ususally closely colour-match using the colour-picker tool to get the same information.
+
+  using My App as example:
+  Q: What margin size gets the design closest to the mock-up?
+  A:
+  Trick Question.
+  there are multiple ways of doing this.
+  The white space between boxes can be affected by the margins of both boxes, so removing whitespace can be achieved with margin manipulation. You change the right marmgin of the image to push text away, or leave the margin at 0 and, instead, apply a style to the margin of the text instead.
+
+
+</body>
+</html>
+
+Template:
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      5. Images & Whitespace
+    </title>
+  </head>
+-->
+  <body>
+    <center>
+      <div class="title">
+        Images and Whitespace
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="subtitle">
+        |- Elements, Markup, and Tags -|
+      </div>
+    </center>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><b>HTML</b> is made up of <u><em>Elements</em></u>.
+        </p>
+        <u><b>Elements(*)
+        </b> contain:</u>
+        <ul style="list-style-type:none">
+          <li>Text Content (What you're looking at)</li>
+          <li>Markup(*) (What it looks like)</li>
+          <li>Refs to other docs (e.g. images, videos)</b></li>
+          <li>Links to other pages (Other things to look at)</li>
+          <li><em>HTML Markup.</em></u></li>
+        </ul>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump"><u><b>HTML Markup(*)</b> consists of:</u>
+        </p
+        <ul style="list-style-type:none">
+          <li>opening tag &lt;tag name&gt; </li>
+          <li>the tag contents</li>
+          <li>closing tag &lt;&#47;tag name&gt;</li>
+        </ul>
+        <br>
+      </div>
+    </center>
+  <br>
+  <br>
+    <center>
+      <div class="content">
+        <p class="bump">
+          <u><b>HTML elements</b> are either <em>1) inline</em> or <em>2) block.</em></u>
+        </p>
+          <b>Block</b>, as the name might suggest, makes an 'invisible box' around whatever is inside the element.
+          <br>This box has dimensions which can be exploited. (There will be more on this later.)
+          <br>An <b>inline</b> element occupies only the space reserved by the tags that define the inline element
+          <br>
+          <br>
+        <p>
+          <a href="http://www.webdesignerdepot.com/2012/09/when-pages-are-not-paper-the-designers-guide-to-layout-code/">Here's a site</a> with a handy diagram that clearly and simply shows the difference between 'Block' and 'Inline'
+        </p>
+          <br>
+      </div>
+    </center>
+    <br>
+    <br>
+    <center>
+      <div class="subtitle">
+        <a href="Index.html#">|- Back to Table of Contents -|</a>
+      </div>
+    </center>
+  </body>
+  </html>
