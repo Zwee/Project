@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>
-      Zwee Learns Page 7
+      Z Learns Pg 7
     </title>
   </head>
   <body>
@@ -14,52 +14,63 @@
       </h1>
       <br><br>
       <div class="leftpane">
-        <h2 class="bling">How CSS rules are weighted:</h2>
-        In CSS, the most specific rule is applied to every element.
-        <h4 class="highlighter">Analogy: US Legal System v. 4 yr old kid.</h4>
-        <p>Federal (most broad) -> State -> Municipal -> Your Family (most specific)
-        <br>
+        <h2 class="bling">How CSS rules are weighted:
+        </h2>
+
+        <span class="highlighter">Analogy: US Legal System v. 4 yr old kid.
+        </h4>
+        <p>In CSS, the most specific rule is applied to every element.
+  <br>
+        Federal (most broad) -> State -> Municipal -> Your Family (most specific)
+  <br>
         (least weight).............->.........->................-> (most weight)
-        <br><br>
+  <br><br>
         The house rules are going to be the ones that the kid lives by regularly, with very little impact felt from any Federal rules. The kid is more worried about crossing Mum & Dad than they are about crossing the President. (Terrible analogy, sue me.)
         Basically, National rules would have the weight of House rules, and vice versa, if the US was controlled like CSS.
       </p>
-        <h4>This hierarchy is what is meant with the word 'Cascading'.</h4>
-        <p>
+      <span class="bling">This hierarchy is what is meant with the word 'Cascading'.
+      </span>
+      <p>
           You go down as far as you need to do into the rules until you find the cone that best describes the elements, then that rule is applied.
-
           There is no need to memorise all possible attributes and values.
           Instead, one should get comfortable looking up CSS documentation.
-
           As my mate is fond of saying:
           "You don't need to know everything. You just need to know how to look everything up."
           It also matters where you define the rules and the order in which they are applied.
-          <h3 class="bling">About Class</h3>
-          <p>
-          <h4 class="highlighter">When 'calling an element' (typing into code):</h4>
-          We refer to a HTML element's class name by '.class-name'. Also note how we can apply rules to all &lt;div&gt;'s or just certain &lt;div&gt;'s by using the appropriate selector.
+        </p>
+        <h3 class="bling">About Class
+        </h3>
+        <span class="highlighter">When 'calling an element' (typing into code):
+        </span>
+        <p>We refer to a HTML element's class name by '.class-name'. Also note how we can apply rules to all &lt;div&gt;'s or just certain &lt;div&gt;'s by using the appropriate selector.
         </p>
       </div>
       <div class="rightpane">
-        <p>
-          <h4>Here's an example:</h4>
           <img src="https://raw.githubusercontent.com/Zwee/Project/master/css-selectors-properties.jpg" alt="example of .class-name">
-          <h4>An element (like 'body') does not get a '.' in front of it. This is only for class names.</h4>
-
-          <h2 class="bling">Note:</h2>
-          in &#60;style&#62; element we refer to a HTML element's class name by writing .class-name
+          <p><span class="bling">An element (like 'body') does not get a '.' in front of it. This is only for class names.
+          </span>
+  <br>
+          <span class="highlighter">Note:
+          </span>
+          In &#60;style&#62; element we refer to a HTML element's class name by writing .class-name
           Also note how we can apply rules to all divs or just certain divs by using the appropriate selector.
-          <h3 class="highlighter">e.g.:</h3>
-          .center {
-          <br>text-align: center;
-          <br>color: red;
-          <br>}
-          <h4>means all HTML elements with class 'center' will be red and center aligned.</h4>
-        </p>
+          </p>
+          <span class="highlighter">e.g.:</span>
+          <ul style="list-style-type: none">
+            <li>.center {
+            </li>
+            <li>text-align: center;
+            </li>
+            <li>color: red;
+            </li>
+            <li>}
+            </li>
+          </ul>
+          <b>means all HTML elements with class 'center' will be red and center aligned.</b>
         <table class="footer">
           <tr>
             <td class="prevpg"><a href="Pg6.html#"><span class="bling">Previous Page</span></a></td>
-            <td class="mainpg"><a href="Pg1index.v2.0.html#">Main Page</a></td>
+            <td class="mainpg"><a href="Pg1index.html#">Main Page</a></td>
             <td class="nextpg"><a href="Pg8.html#"><span class="bling">Next Page</span></a></td>
           </tr>
         </table>
@@ -67,47 +78,3 @@
     </div>
   </body>
 </html>
-
-
-
-
-<!--Rules:
-
-
-
-
-
-
-
-
-  Class:
-  Note: in &#60;style&#62; element we refer to a HTML element's class name by writing .class-name
-  Also note how we can apply rules to all divs or just certain divs by using the appropriate selector. E.g.:
-  .center {
-  text-align: center;
-  color: red;
-  }
-  means all HTML elements with class 'center' will be red and center aligned.
-
-
-<p>
-  This is Slide 9 Adding CSS Styling to Your Site
-</p>
-
-3 Ways to Include CSS Styling to Your Site:
-
-1) write CSS in the &#60;head&#62; of your HTML -Good for small projects, like from scratchpad. To do this: a) at top of HTML cos, add "head"  b) Inside &#60;head&#62;, add a &#60;style&#62; element.   c) Write your CSS in the &#60;style&#62; element, then put HTML for the rest of your page below.
-
-2) a) Write all structure HTML in 1 file (e.g.: main.html)    b) In separate file (main.css) put in all your CSS code.   c) Add &#60;head&#62; at top of your HTML   d) Add &#60;link&#62; inside &#60;head&#62; (&#60;link&#62; is a void tag)    e) Add these attributes to your &#60;link&#62;:   rel="stylesheet"   href="main.css"
-
-3)Write your style inline with your HTML.
-This is usually a bad idea as it leads to a LOT of repetition and makes for very unsightly code. However, you may still see code that uses this method, so it's good to be familiar with it. With this method you modify the style attributes of every individual HTML element.
-
-NOTE:
-There are a lot of little mistakes you can and will make at some point that will cause any of these methods not to work. E.g.: writing code using 2) with main.html and main.css in differenet folders on your computer. (Hint: this doesn't work at all.)
-
-You will have a higher HTML : CSS code ratio. HTML is the body, CSS is just the presentation. It only takes a little code to make big visual impacts.
-
-When 'calling' (typing into code) an element (like body) does not get a . in front of it.
-Class names get a . in front when calling.
--->

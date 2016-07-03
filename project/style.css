@@ -141,15 +141,15 @@ if you need a refresher about how to do this.
 
   .bling {
     text-shadow: 4px 4px 2px #FF9933;
-    text-decoration: underline;
+    text-decoration: overline;
+    font-weight: bold;
   }
 
   .highlighter {
-    text-decoration: underline;
     background-color: #FFCA97;
   }
 
-  .iframe {
-    max-width: 500px;
-    margin-left: 100px;
-  }
+  iframe {
+     width: 560px;
+     height: 315px;
+   }
